@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "target": "es6",
+    "lib": ["es2020", "dom"]
+  },
+  "compileOnSave": true,
+  "include": ["src/**/*"]
+}
