@@ -3,7 +3,7 @@
 ## Authenticate service account in local dev
 
 ```bash
-gcloud config set project firebase-project-id
+gcloud config set project fire-base-project-id-01
 
 export GOOGLE_APPLICATION_CREDENTIALS=/...
 

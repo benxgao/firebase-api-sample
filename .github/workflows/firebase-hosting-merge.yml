@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
 
       - name: Cache npm Dependencies
         uses: actions/cache@v4
@@ -24,7 +24,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install npm Dependencies
-        run: npm ci
+        run: npm i
         working-directory: functions
 
         # echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"

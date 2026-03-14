@@ -42,19 +42,15 @@ This open-source project demonstrates how to manage a Firebase project as an API
    - Start the Firebase emulators for local API testing:
 
      ```bash
-     npm run serve
+     # set up .env and gcp_credentials.json in /functions
+     npm run dev
      ```
 
-   - Or, use the full emulator suite:
-
-     ```bash
-     firebase emulators:start
-     ```
-
-5. **Deploy to Firebase**
+5. **Deploy to Firebase via Github Actions**
 
    ```bash
-   firebase deploy --only functions
+   # configure vars/secrets in github actions
+   # run commands in scripts/gcp.sh
    ```
 
 ## Basic Commands
